@@ -19,12 +19,12 @@ trigger: none
 # Default: Every 6 hours
 #
 
-schedules:
-  - cron: "0 */6 * * *"
-    branches:
-      include:
-        - main
-    always: true
+#schedules:
+#  - cron: "0 */6 * * *"
+#    branches:
+#      include:
+#        - main
+#   always: true
 
 #
 # Pipelines
@@ -32,14 +32,14 @@ schedules:
 # the Push pipeline.
 #
 
-resources:
-  pipelines:
-    - pipeline: 'Pull'
-      source: 'AzOps - Push'
-      trigger:
-        branches:
-          include:
-            - main
+#resources:
+#  pipelines:
+#    - pipeline: 'Pull'
+#      source: 'AzOps - Push'
+#      trigger:
+#        branches:
+#          include:
+#            - main
 
 variables:
 
